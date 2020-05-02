@@ -34,10 +34,10 @@ qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "
 
 case "$OSTYPE" in
 	linux*)
-			DIR="$(pwd)"
+			DIR="$(dirname $0)"
 			;;
 	*)
-			DIR="$(pwd)"
+			DIR="$(dirname $0)"
 			;;
 esac
 
